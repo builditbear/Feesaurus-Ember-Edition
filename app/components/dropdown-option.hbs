@@ -1,14 +1,14 @@
 <label for={{@label}}></label>
 <select
-  name={{@optionGroupName}}
-  id={{@label}}
-  {{on "change" this.updateChosenOption}}
+    name={{@optionGroupName}}
+    id={{@label}}
+    {{on "change" this.updateChosenOption}}
 >
-  <option value=""> == Please choose an option == </option>
-  {{#each @options as |optionProps|}}
-    <option value={{optionProps.value}}>{{optionProps.name}}</option>
-  {{/each}}
+    <option value=""> == Please choose an option == </option>
+    {{#each @options as |optionProps|}}
+        <option value={{optionProps.value}}>{{optionProps.name}}</option>
+    {{/each}}
 </select>
 <div>
-  <p>$ {{this.patientResponsibility}}</p>
+    <p>$ {{this.patientResponsibility}}</p>
 </div>
