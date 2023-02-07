@@ -1,0 +1,10 @@
+<fieldset {{on 'change' this.updateChosenOption}}>
+  <legend>{{@label}}</legend>
+  <label for="yes">Yes</label>
+  <input type="radio" id="yes" name="choice" value="yes"/>
+  <label for="yes">No</label>
+  <input type="radio" id="no" name="choice" value="no" />
+</fieldset>
+<div>
+  <p>$ {{this.patientResponsibility}}</p>
+</div>

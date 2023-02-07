@@ -4,7 +4,13 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function (defaults) {
   const app = new EmberApp(defaults, {
-    // Add options here
+    'ember-cli-favicon': {
+      enabled: true, // By default favicons are NOT generated in TEST env to speedup builds
+  
+      onSuccess() { console.log("Favicon successfully generated.") }, // You can call your callback when favicons are generated successfully
+  
+      iconPath: 'favicon.jpg', // icon path related to `public` folder
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated
