@@ -4,9 +4,9 @@ import { tracked } from '@glimmer/tracking';
 
 export default class DropdownOption extends Component {
     @tracked patientResponsibility = 0;
-
+x
     @action
     updateChosenOption(event) {
-        this.patientResponsibility = event.target.value || 0;
+        this.patientResponsibility = Number((event.target.value || 0));
     }
 }

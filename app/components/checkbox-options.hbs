@@ -1,0 +1,18 @@
+<fieldset>
+    <legend>{{@label}}</legend>
+
+    {{#each @options as |optionProps|}}
+        <div>
+            <input 
+                type="checkbox" 
+                id={{optionProps.name}}
+                name={{@optionGroupName}} 
+                value={{optionProps.value}}
+                {{on "change" this.updateChoice}}>
+            <label for={{optionProps.name}}>{{optionProps.name}}</label>
+        </div>
+    {{/each}}
+</fieldset>
+<div>
+    <p>$ {{this.patientResponsibility}}</p>
+</div>

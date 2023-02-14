@@ -19,4 +19,33 @@ export default class FeeCalculator extends Component {
             value: 200,
         },
     ];
+    lensMaterials = [
+        {
+            name: 'CR-39',
+            value: '30',
+        },
+        {
+            name: 'Polycarbonate',
+            value: '50',
+        },
+        {
+            name: 'Hi-Index 1.67',
+            value: '100',
+        },
+    ];
+    miscLensOptions = [
+        {
+            name: 'Rimless mount: 2 or 3 holes',
+            value: '30'
+        },
+        {
+            name: 'Mirror coat',
+            value: '100'
+        },
+        {
+            name: 'Edge polish',
+            value: '20'
+        }
+    ]
+
 }
